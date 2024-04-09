@@ -1,50 +1,52 @@
 addr data   label     opcode  operands
 ---- ----  --------   ------  --------
-0000 3040  START      LI      R1      
-0002 FFFF                     $FFFF   
-0004 3080             LI      R2      
-0006 FFFF                     $FFFF   
-0008 30C0  INIT       LI      R3      
-000A 0000                     $0      
-000C 3180             LI      R6      
-000E 0000                     $0      
-0010 21D0             MV      R7 R2   
-0012 5210             SLTI    R0 R2   
-0014 0000                     $0      
-0016 9800             BRN             
-0018 001E                     NEG     
-001A F800             BRA             
-001C 0024                     LOOP    
-001E 8090  NEG        NOT     R2 R2   
-0020 3090             ADDI    R2 R2   
-0022 0001                     $1      
-0024 3100  LOOP       LI      R4      
-0026 0001                     $1      
-0028 9154             AND     R5 R2 R4
-002A 5228             SLTI    R0 R5   
-002C 0001                     $1      
-002E C800             BRZ             
-0030 0036                     INCR    
-0032 F800             BRA             
-0034 0038                     CONT    
-0036 00D9  INCR       ADD     R3 R3 R1
-0038 F094  CONT       SRA     R2 R2 R4
-003A C04C             SLL     R1 R1 R4
-003C 31B0             ADDI    R6 R6   
-003E 0001                     $1      
-0040 5230             SLTI    R0 R6   
-0042 0008                     $8      
-0044 9800             BRN             
-0046 0024                     LOOP    
-0048 F800             BRA             
-004A 004C                     FINAL   
-004C 5238  FINAL      SLTI    R0 R7   
-004E 0000                     $0      
-0050 9800             BRN             
-0052 0058                     NEG1    
-0054 F800             BRA             
-0056 005E                     DONE    
-0058 80D8  NEG1       NOT     R3 R3   
-005A 30D8             ADDI    R3 R3   
-005C 0001                     $1      
-005E FE00  DONE       STOP            
+3000 3040  START      LI      R1      
+3002 FFFF                     $FFFF   
+3004 3080             LI      R2      
+3006 FFFF                     $FFFF   
+3008 30C0  INIT       LI      R3      
+300A 0000                     $0      
+300C 3180             LI      R6      
+300E 0000                     $0      
+3010 21D0             MV      R7 R2   
+3012 5210             SLTI    R0 R2   
+3014 0000                     $0      
+3016 9800             BRN             
+3018 301E                     NEG     
+301A F800             BRA             
+301C 3024                     LOOP    
+301E 8090  NEG        NOT     R2 R2   
+3020 3090             ADDI    R2 R2   
+3022 0001                     $1      
+3024 3100  LOOP       LI      R4      
+3026 0001                     $1      
+3028 9154             AND     R5 R2 R4
+302A 5228             SLTI    R0 R5   
+302C 0001                     $1      
+302E C800             BRZ             
+3030 3036                     INCR    
+3032 F800             BRA             
+3034 3038                     CONT    
+3036 00D9  INCR       ADD     R3 R3 R1
+3038 F094  CONT       SRA     R2 R2 R4
+303A C04C             SLL     R1 R1 R4
+303C 31B0             ADDI    R6 R6   
+303E 0001                     $1      
+3040 5230             SLTI    R0 R6   
+3042 0008                     $8      
+3044 9800             BRN             
+3046 3024                     LOOP    
+3048 F800             BRA             
+304A 304C                     FINAL   
+304C 5238  FINAL      SLTI    R0 R7   
+304E 0000                     $0      
+3050 9800             BRN             
+3052 3058                     NEG1    
+3054 F800             BRA             
+3056 3062                     DONE    
+3058 80D8  NEG1       NOT     R3 R3   
+305A 30D8             ADDI    R3 R3   
+305C 0001                     $1      
+305E 3803             SW      R0 R3   
+3060 4000                     $4000   
+3062 FE00  DONE       STOP            
