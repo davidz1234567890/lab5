@@ -1,4 +1,4 @@
-      .ORG $0000
+      .ORG $3000
 START LI R1, $FFFF ; R1 <- -128 for now
       LI R2, $FFFF ; R2 <- +127 for now
 INIT  LI R3, $0 ; clears the product
@@ -27,5 +27,6 @@ FINAL SLTI R0, R7, $0 ; performs R7 - $0
       BRA DONE ; else returns
 NEG1  NOT R3, R3 ; product <- not product
       ADDI R3, R3, $1 ;product <- product + $1
+      SW R0, R3, $4000 ; M[0 + $4000] <- R3
 DONE  STOP
 
