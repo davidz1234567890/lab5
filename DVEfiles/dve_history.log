@@ -62,50 +62,38 @@ gui_sim_continue
 gui_wv_scroll_hslidermove -id  Wave.1 0
 gui_marker_move -id  Wave.1 C1 95
 gui_marker_move -id  Wave.1 C1 105
-gui_list_expand -id  Wave.1   {test_bench.DUT.ZN_flags[1:0]}
-gui_marker_move -id  Wave.1 C1 105
-gui_marker_move -id  Wave.1 C1 100
-gui_wv_scroll_hslidermove -id  Wave.1 139
-gui_marker_move -id  Wave.1 C1 245
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_marker_move -id  Wave.1 C1 101
-gui_wv_scroll_hslidermove -id  Wave.1 265
-gui_marker_move -id  Wave.1 C1 255
-gui_marker_move -id  Wave.1 C1 250
-gui_list_select -id Wave.1 -selected  { test_bench.DUT.done   }
-gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
-gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_list_select -id Wave.1 -selected  { test_bench.DUT.AeqB   }
-gui_list_select -id Wave.1 -selected  { test_bench.DUT.AgtB   }
-gui_marker_move -id  Wave.1 C1 165
-gui_marker_move -id  Wave.1 C1 245
-gui_marker_move -id  Wave.1 C1 255
-gui_marker_move -id  Wave.1 C1 245
-gui_marker_move -id  Wave.1 C1 165
 gui_marker_move -id  Wave.1 C1 95
-gui_marker_move -id  Wave.1 C1 105
+gui_list_expand -id  Wave.1   {test_bench.DUT.ZN_flags[1:0]}
 gui_marker_move -id  Wave.1 C1 100
-gui_wv_scroll_hslidermove -id  Wave.1 249
+gui_wv_scroll_hslidermove -id  Wave.1 325
+gui_marker_move -id  Wave.1 C1 245
 gui_marker_move -id  Wave.1 C1 250
 gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
 gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
 gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
 gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
+gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
+gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
+gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
+gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
 gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_marker_move -id  Wave.1 C1 105
 gui_marker_move -id  Wave.1 C1 100
-gui_wv_scroll_hslidermove -id  Wave.1 366
+gui_list_select -id Wave.1 -selected  { test_bench.DUT.done   }
+gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
+gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
+gui_wv_scroll_hslidermove -id  Wave.1 499
 gui_marker_move -id  Wave.1 C1 250
-gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
-gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
-gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
-gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
+gui_list_select -id Wave.1 -selected  { test_bench.DUT.done   }
+gui_list_select -id Wave.1 -selected  { {test_bench.DUT.out[15:0]}   }
 gui_list_select -id Wave.1 -selected  { test_bench.DUT.done   }
 gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
 gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
-gui_wv_scroll_hslidermove -id  Wave.1 0
-gui_list_select -id Wave.1 -selected  { test_bench.DUT.done   }
-gui_marker_move -id  Wave.1 C1 102
 gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
 gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
+gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
+gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
+gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
+gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
+gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
+gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
+gui_close_window -window TopLevel.2

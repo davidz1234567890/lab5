@@ -1,8 +1,12 @@
 Chronologic VCS simulator copyright 1991-2022
 Contains Synopsys proprietary information.
-Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr  9 22:36 2024
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 12 03:51 2024
 VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
 The file '/afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/inter.vpd' was opened successfully.
 $finish called from file "task2.sv", line 185.
 $finish at simulation time                  305
 Simulation complete, time is 305.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 305
+CPU Time:      0.440 seconds;       Data structure size:   0.0Mb
+Fri Apr 12 03:56:45 2024

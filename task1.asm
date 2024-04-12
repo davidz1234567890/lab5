@@ -1,11 +1,6 @@
       .ORG $3000
-<<<<<<< HEAD
-START LI R1, $FF81 ; R1 <- -128 for now
-      LI R2, $FF81 ; R2 <- +127 for now
-=======
 START LI R1, $FFFF ; R1 <- -128 for now
       LI R2, $FFFF ; R2 <- +127 for now
->>>>>>> 03466861235bd2485d83cb70805e27603a5cbde3
 INIT  LI R3, $0 ; clears the product
       LI R6, $0 ; initializes count
 

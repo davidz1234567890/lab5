@@ -1,9 +1,9 @@
 addr data   label     opcode  operands
 ---- ----  --------   ------  --------
 3000 3040  START      LI      R1      
-3002 FF81                     $FF81   
+3002 FFFF                     $FFFF   
 3004 3080             LI      R2      
-3006 FF81                     $FF81   
+3006 FFFF                     $FFFF   
 3008 30C0  INIT       LI      R3      
 300A 0000                     $0      
 300C 3180             LI      R6      
