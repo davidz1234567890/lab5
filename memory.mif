@@ -11,9 +11,9 @@ DEPTH = 65536;         % Memory depth and width are required   %
                 BEGIN
              
 3000 : 3040;
-3002 : FFFF;
+3002 : FF81;
 3004 : 3080;
-3006 : FFFF;
+3006 : FF81;
 3008 : 30C0;
 300A : 0000;
 300C : 3180;

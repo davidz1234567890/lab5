@@ -1,0 +1,11 @@
+=======================DVE Context and Call Stack=========================
+=======================DVE Context and Call Stack=========================
+Command line: /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe ./simv  -pid 11610" -toolin /tmp/vcs_20240410023659_11609_dzhang2..stdin -toolout /tmp/vcs_20240410023659_11609_dzhang2..stdout
+Command line: /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/gui/dve/linux64/bin/dve.exe -full64 -ucliplatform=linux64 -toolargs "-ucligui -toolexe ./simv  -pid 11610" -toolin /tmp/vcs_20240410023659_11609_dzhang2..stdin -toolout /tmp/vcs_20240410023659_11609_dzhang2..stdout
+
+
+Received Signal 1 from: PID=4769 (UID=2694455)
+
+
+Process terminated by hangup.
+

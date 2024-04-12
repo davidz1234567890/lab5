@@ -1,0 +1,86 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "Decoder": [
+        "Decoder",
+        "t8TcA",
+        "module",
+        2
+    ],
+    "BarrelShifter": [
+        "BarrelShifter",
+        "p7fYB",
+        "module",
+        3
+    ],
+    "Multiplexer": [
+        "Multiplexer",
+        "UxyT3",
+        "module",
+        4
+    ],
+    "MagComp": [
+        "MagComp",
+        "vaLRj",
+        "module",
+        14
+    ],
+    "Comparator": [
+        "Comparator",
+        "ZPSNi",
+        "module",
+        5
+    ],
+    "Adder": [
+        "Adder",
+        "xUt1z",
+        "module",
+        6
+    ],
+    "Subtracter": [
+        "Subtracter",
+        "pcAkE",
+        "module",
+        7
+    ],
+    "Synchronizer": [
+        "Synchronizer",
+        "mLbx7",
+        "module",
+        8
+    ],
+    "ShiftRegisterSIPO": [
+        "ShiftRegisterSIPO",
+        "QtqVB",
+        "module",
+        9
+    ],
+    "ShiftRegisterPIPO": [
+        "ShiftRegisterPIPO",
+        "w133T",
+        "module",
+        10
+    ],
+    "BarrelShiftRegister": [
+        "BarrelShiftRegister",
+        "ts568",
+        "module",
+        11
+    ],
+    "test_bench": [
+        "test_bench",
+        "YMuFK",
+        "module",
+        12
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        13
+    ]
+}
