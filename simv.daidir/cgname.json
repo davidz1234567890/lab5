@@ -1,9 +1,57 @@
 {
+    "_vcs_unit__2422599317": [
+        "_vcs_unit__2422599317",
+        "xYkqt",
+        "module",
+        15
+    ],
     "std": [
         "std",
         "reYIK",
         "module",
         1
+    ],
+    "memory1024x16": [
+        "memory1024x16",
+        "LBGWb",
+        "module",
+        16
+    ],
+    "memory1024x16_program": [
+        "memory1024x16_program",
+        "LTm6Y",
+        "module",
+        17
+    ],
+    "SevenSegmentDigit": [
+        "SevenSegmentDigit",
+        "wDpck",
+        "module",
+        18
+    ],
+    "SevenSegmentControl": [
+        "SevenSegmentControl",
+        "pjySW",
+        "module",
+        19
+    ],
+    "comb_write_reg": [
+        "comb_write_reg",
+        "TiIVQ",
+        "module",
+        20
+    ],
+    "memory_synthesis": [
+        "memory_synthesis",
+        "wrad1",
+        "module",
+        21
+    ],
+    "RISC240_top": [
+        "RISC240_top",
+        "zRShV",
+        "module",
+        22
     ],
     "Decoder": [
         "Decoder",

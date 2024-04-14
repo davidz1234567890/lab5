@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Apr 14 01:52:50 2024
+Quartus Prime Version : 16.1.2 Build 203 01/18/2017 SJ Standard Edition
+Revision Name : RISC240_top
+Top-level Entity Name : RISC240_top
+Family : Cyclone IV E
+Total logic elements : 1,375
+    Total combinational functions : 1,180
+    Dedicated logic registers : 254
+Total registers : 254
+Total pins : 105
+Total virtual pins : 0
+Total memory bits : 16,384
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
