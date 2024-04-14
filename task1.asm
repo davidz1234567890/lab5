@@ -1,10 +1,17 @@
+      .ORG $0
+      BRA $200
+
       .ORG $3000
-START LI R1, $FFFF ; R1 <- -128 for now
-      LI R2, $FFFF ; R2 <- +127 for now
+START .DW $6 ; R1 <- -128 for now
+      .DW $7 ; R2 <- +127 for now
+
+      .ORG $200
 INIT  LI R3, $0 ; clears the product
       LI R6, $0 ; initializes count
 
-      MV R7, R2 ; moves B to R7
+      LW R7, R0, $3002 ; moves B to R7
+      LW R2, R0, $3002 ; moves B to R2
+      LW R1, R0, $3000 ; moves A to R1
       SLTI R0, R2, $0 ; performs R2 - $0
       BRN NEG
       BRA LOOP
@@ -27,6 +34,7 @@ FINAL SLTI R0, R7, $0 ; performs R7 - $0
       BRA DONE ; else returns
 NEG1  NOT R3, R3 ; product <- not product
       ADDI R3, R3, $1 ;product <- product + $1
-      SW R0, R3, $4000 ; M[0 + $4000] <- R3
-DONE  STOP
+      ;SW R0, R3, $4000 ; M[0 + $4000] <- R3
+DONE  SW R0, R3, $4000 ; M[0+4000] <- R3
+      STOP
 

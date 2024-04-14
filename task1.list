@@ -1,52 +1,57 @@
 addr data   label     opcode  operands
 ---- ----  --------   ------  --------
-3000 3040  START      LI      R1      
-3002 FFFF                     $FFFF   
-3004 3080             LI      R2      
-3006 FFFF                     $FFFF   
-3008 30C0  INIT       LI      R3      
-300A 0000                     $0      
-300C 3180             LI      R6      
-300E 0000                     $0      
-3010 21D0             MV      R7 R2   
-3012 5210             SLTI    R0 R2   
-3014 0000                     $0      
-3016 9800             BRN             
-3018 301E                     NEG     
-301A F800             BRA             
-301C 3024                     LOOP    
-301E 8090  NEG        NOT     R2 R2   
-3020 3090             ADDI    R2 R2   
-3022 0001                     $1      
-3024 3100  LOOP       LI      R4      
-3026 0001                     $1      
-3028 9154             AND     R5 R2 R4
-302A 5228             SLTI    R0 R5   
-302C 0001                     $1      
-302E C800             BRZ             
-3030 3036                     INCR    
-3032 F800             BRA             
-3034 3038                     CONT    
-3036 00D9  INCR       ADD     R3 R3 R1
-3038 F094  CONT       SRA     R2 R2 R4
-303A C04C             SLL     R1 R1 R4
-303C 31B0             ADDI    R6 R6   
-303E 0001                     $1      
-3040 5230             SLTI    R0 R6   
-3042 0008                     $8      
-3044 9800             BRN             
-3046 3024                     LOOP    
-3048 F800             BRA             
-304A 304C                     FINAL   
-304C 5238  FINAL      SLTI    R0 R7   
-304E 0000                     $0      
-3050 9800             BRN             
-3052 3058                     NEG1    
-3054 F800             BRA             
-3056 3062                     DONE    
-3058 80D8  NEG1       NOT     R3 R3   
-305A 30D8             ADDI    R3 R3   
-305C 0001                     $1      
-305E 3803             SW      R0 R3   
-3060 4000                     $4000   
-3062 FE00  DONE       STOP            
+0000 F800             BRA             
+0002 0200                     $200    
+3000 0006  START      .DW     $6      
+3002 0007             .DW     $7      
+0200 30C0  INIT       LI      R3      
+0202 0000                     $0      
+0204 3180             LI      R6      
+0206 0000                     $0      
+0208 29C0             LW      R7 R0   
+020A 3002                     $3002   
+020C 2880             LW      R2 R0   
+020E 3002                     $3002   
+0210 2840             LW      R1 R0   
+0212 3000                     $3000   
+0214 5210             SLTI    R0 R2   
+0216 0000                     $0      
+0218 9800             BRN             
+021A 0220                     NEG     
+021C F800             BRA             
+021E 0226                     LOOP    
+0220 8090  NEG        NOT     R2 R2   
+0222 3090             ADDI    R2 R2   
+0224 0001                     $1      
+0226 3100  LOOP       LI      R4      
+0228 0001                     $1      
+022A 9154             AND     R5 R2 R4
+022C 5228             SLTI    R0 R5   
+022E 0001                     $1      
+0230 C800             BRZ             
+0232 0238                     INCR    
+0234 F800             BRA             
+0236 023A                     CONT    
+0238 00D9  INCR       ADD     R3 R3 R1
+023A F094  CONT       SRA     R2 R2 R4
+023C C04C             SLL     R1 R1 R4
+023E 31B0             ADDI    R6 R6   
+0240 0001                     $1      
+0242 5230             SLTI    R0 R6   
+0244 0008                     $8      
+0246 9800             BRN             
+0248 0226                     LOOP    
+024A F800             BRA             
+024C 024E                     FINAL   
+024E 5238  FINAL      SLTI    R0 R7   
+0250 0000                     $0      
+0252 9800             BRN             
+0254 025A                     NEG1    
+0256 F800             BRA             
+0258 0260                     DONE    
+025A 80D8  NEG1       NOT     R3 R3   
+025C 30D8             ADDI    R3 R3   
+025E 0001                     $1      
+0260 3803  DONE       SW      R0 R3   
+0262 4000                     $4000   
+0264 FE00             STOP            
