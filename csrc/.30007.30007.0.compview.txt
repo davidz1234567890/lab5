@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1713123793.565728588, "rt":0.07, "ut":0.04, "st":0.02}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1713123793.383986784}
+{"VCS_COMP_START_TIME": 1713123793.383986784}
+{"VCS_COMP_END_TIME": 1713123793.662548376}
+{"VCS_USER_OPTIONS": "-sverilog lab5/alu.sv lab5/constants.sv lab5/controlpath.sv lab5/datapath.sv lab5/library.sv lab5/memory.sv lab5/regfile.sv lab5/RISC240.sv"}

@@ -2,8 +2,8 @@ addr data   label     opcode  operands
 ---- ----  --------   ------  --------
 0000 F800             BRA             
 0002 0200                     $200    
-3000 0006  START      .DW     $6      
-3002 0007             .DW     $7      
+3000 FFFF  START      .DW     $FFFF   
+3002 FFFF             .DW     $FFFF   
 0200 30C0  INIT       LI      R3      
 0202 0000                     $0      
 0204 3180             LI      R6      

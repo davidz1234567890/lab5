@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RISC240_top
-Sun Apr 14 01:52:51 2024
+Sun Apr 14 15:50:26 2024
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
 
 
@@ -79,13 +79,13 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Apr 14 01:52:50 2024           ;
+; Analysis & Synthesis Status        ; Successful - Sun Apr 14 15:50:26 2024           ;
 ; Quartus Prime Version              ; 16.1.2 Build 203 01/18/2017 SJ Standard Edition ;
 ; Revision Name                      ; RISC240_top                                     ;
 ; Top-level Entity Name              ; RISC240_top                                     ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 1,375                                           ;
-;     Total combinational functions  ; 1,180                                           ;
+; Total logic elements               ; 1,380                                           ;
+;     Total combinational functions  ; 1,190                                           ;
 ;     Dedicated logic registers      ; 254                                             ;
 ; Total registers                    ; 254                                             ;
 ; Total pins                         ; 105                                             ;
@@ -195,15 +195,14 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
 ;     Processor 7            ;   0.0%      ;
 ;     Processor 8            ;   0.0%      ;
-;     Processor 9            ;   0.0%      ;
-;     Processors 10-12       ;   0.0%      ;
+;     Processors 9-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -239,16 +238,16 @@ agreement for further details.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 1,375        ;
+; Estimated Total logic elements              ; 1,380        ;
 ;                                             ;              ;
-; Total combinational functions               ; 1180         ;
+; Total combinational functions               ; 1190         ;
 ; Logic element usage by number of LUT inputs ;              ;
 ;     -- 4 input functions                    ; 843          ;
 ;     -- 3 input functions                    ; 286          ;
-;     -- <=2 input functions                  ; 51           ;
+;     -- <=2 input functions                  ; 61           ;
 ;                                             ;              ;
 ; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 1104         ;
+;     -- normal mode                          ; 1114         ;
 ;     -- arithmetic mode                      ; 76           ;
 ;                                             ;              ;
 ; Total registers                             ; 254          ;
@@ -262,8 +261,8 @@ agreement for further details.
 ;                                             ;              ;
 ; Maximum fan-out node                        ; KEY[0]~input ;
 ; Maximum fan-out                             ; 270          ;
-; Total fan-out                               ; 5748         ;
-; Average fan-out                             ; 3.46         ;
+; Total fan-out                               ; 5758         ;
+; Average fan-out                             ; 3.45         ;
 +---------------------------------------------+--------------+
 
 
@@ -272,7 +271,7 @@ agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                    ; Entity Name         ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |RISC240_top                                 ; 1180 (65)           ; 254 (0)                   ; 16384       ; 0            ; 0       ; 0         ; 105  ; 0            ; |RISC240_top                                                                                           ; RISC240_top         ; work         ;
+; |RISC240_top                                 ; 1190 (65)           ; 254 (0)                   ; 16384       ; 0            ; 0       ; 0         ; 105  ; 0            ; |RISC240_top                                                                                           ; RISC240_top         ; work         ;
 ;    |SevenSegmentControl:ssc|                 ; 56 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISC240_top|SevenSegmentControl:ssc                                                                   ; SevenSegmentControl ; work         ;
 ;       |SevenSegmentDigit:ssd0|               ; 7 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISC240_top|SevenSegmentControl:ssc|SevenSegmentDigit:ssd0                                            ; SevenSegmentDigit   ; work         ;
 ;          |HEXtoSevenSegment:h2ss|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISC240_top|SevenSegmentControl:ssc|SevenSegmentDigit:ssd0|HEXtoSevenSegment:h2ss                     ; HEXtoSevenSegment   ; work         ;
@@ -312,8 +311,8 @@ agreement for further details.
 ;       |register:pcReg|                       ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISC240_top|datapath:dp|register:pcReg                                                                ; register            ; work         ;
 ;       |tridrive:a|                           ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISC240_top|datapath:dp|tridrive:a                                                                    ; tridrive            ; work         ;
 ;       |tridrive:c|                           ; 48 (48)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISC240_top|datapath:dp|tridrive:c                                                                    ; tridrive            ; work         ;
-;    |memorySystem:mem|                        ; 9 (0)               ; 68 (0)                    ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISC240_top|memorySystem:mem                                                                          ; memorySystem        ; work         ;
-;       |memory_synthesis:mem|                 ; 9 (9)               ; 68 (68)                   ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISC240_top|memorySystem:mem|memory_synthesis:mem                                                     ; memory_synthesis    ; work         ;
+;    |memorySystem:mem|                        ; 19 (0)              ; 68 (0)                    ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISC240_top|memorySystem:mem                                                                          ; memorySystem        ; work         ;
+;       |memory_synthesis:mem|                 ; 19 (19)             ; 68 (68)                   ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISC240_top|memorySystem:mem|memory_synthesis:mem                                                     ; memory_synthesis    ; work         ;
 ;          |altsyncram:mem_rtl_0|              ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISC240_top|memorySystem:mem|memory_synthesis:mem|altsyncram:mem_rtl_0                                ; altsyncram          ; work         ;
 ;             |altsyncram_k7g1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISC240_top|memorySystem:mem|memory_synthesis:mem|altsyncram:mem_rtl_0|altsyncram_k7g1:auto_generated ; altsyncram_k7g1     ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------+---------------------+--------------+
@@ -362,13 +361,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; controlpath:cp|currState[3]                                ; 86      ;
 ; controlpath:cp|currState[0]                                ; 127     ;
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[46] ; 1       ;
+; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[45] ; 1       ;
+; memorySystem:mem|memory_synthesis:mem|mem~13               ; 1       ;
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[48] ; 1       ;
+; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[47] ; 1       ;
+; memorySystem:mem|memory_synthesis:mem|mem~14               ; 1       ;
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[50] ; 1       ;
+; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[49] ; 1       ;
+; memorySystem:mem|memory_synthesis:mem|mem~15               ; 1       ;
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[52] ; 1       ;
+; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[51] ; 1       ;
+; memorySystem:mem|memory_synthesis:mem|mem~16               ; 1       ;
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[38] ; 1       ;
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[40] ; 1       ;
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[42] ; 1       ;
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[44] ; 1       ;
+; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[43] ; 1       ;
+; memorySystem:mem|memory_synthesis:mem|mem~12               ; 1       ;
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[30] ; 1       ;
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[32] ; 1       ;
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[34] ; 1       ;
@@ -377,7 +386,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[24] ; 1       ;
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[26] ; 1       ;
 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[28] ; 1       ;
-; Total number of inverted registers = 18                    ;         ;
+; Total number of inverted registers = 28                    ;         ;
 +------------------------------------------------------------+---------+
 
 
@@ -834,20 +843,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 16                          ;
 ;     ENA CLR           ; 189                         ;
 ;     plain             ; 42                          ;
-; cycloneiii_lcell_comb ; 1188                        ;
+; cycloneiii_lcell_comb ; 1198                        ;
 ;     arith             ; 76                          ;
 ;         2 data inputs ; 15                          ;
 ;         3 data inputs ; 61                          ;
-;     normal            ; 1112                        ;
+;     normal            ; 1122                        ;
 ;         0 data inputs ; 3                           ;
-;         1 data inputs ; 9                           ;
+;         1 data inputs ; 19                          ;
 ;         2 data inputs ; 32                          ;
 ;         3 data inputs ; 225                         ;
 ;         4 data inputs ; 843                         ;
 ; cycloneiii_ram_block  ; 16                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 22.00                       ;
-; Average LUT depth     ; 13.33                       ;
+; Average LUT depth     ; 13.28                       ;
 +-----------------------+-----------------------------+
 
 
@@ -856,7 +865,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -866,7 +875,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
-    Info: Processing started: Sun Apr 14 01:52:40 2024
+    Info: Processing started: Sun Apr 14 15:50:11 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off task3 -c RISC240_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -946,17 +955,17 @@ Info (12128): Elaborating entity "memory_synthesis" for hierarchy "memorySystem:
 Info (12128): Elaborating entity "SevenSegmentControl" for hierarchy "SevenSegmentControl:ssc" File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/lab5/RISC240.sv Line: 166
 Info (12128): Elaborating entity "SevenSegmentDigit" for hierarchy "SevenSegmentControl:ssc|SevenSegmentDigit:ssd0" File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/lab5/library.sv Line: 292
 Info (12128): Elaborating entity "HEXtoSevenSegment" for hierarchy "SevenSegmentControl:ssc|SevenSegmentDigit:ssd0|HEXtoSevenSegment:h2ss" File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/lab5/library.sv Line: 279
-Warning (113028): 65486 out of 65536 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 51 warnings found, and 10 warnings are reported. File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
-    Warning (113027): Addresses ranging from 0 to 12287 are not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
-    Warning (113026): Memory Initialization File Address 12289 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
-    Warning (113026): Memory Initialization File Address 12291 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
-    Warning (113026): Memory Initialization File Address 12293 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
-    Warning (113026): Memory Initialization File Address 12295 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
-    Warning (113026): Memory Initialization File Address 12297 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
-    Warning (113026): Memory Initialization File Address 12299 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
-    Warning (113026): Memory Initialization File Address 12301 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
-    Warning (113026): Memory Initialization File Address 12303 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
-    Warning (113026): Memory Initialization File Address 12305 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
+Warning (113028): 65481 out of 65536 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 55 warnings found, and 10 warnings are reported. File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
+    Warning (113026): Memory Initialization File Address 1 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
+    Warning (113027): Addresses ranging from 3 to 511 are not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
+    Warning (113026): Memory Initialization File Address 513 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
+    Warning (113026): Memory Initialization File Address 515 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
+    Warning (113026): Memory Initialization File Address 517 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
+    Warning (113026): Memory Initialization File Address 519 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
+    Warning (113026): Memory Initialization File Address 521 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
+    Warning (113026): Memory Initialization File Address 523 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
+    Warning (113026): Memory Initialization File Address 525 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
+    Warning (113026): Memory Initialization File Address 527 is not initialized File: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif Line: 1
 Critical Warning (127004): Memory depth (1024) in the design file differs from memory depth (65536) in the Memory Initialization File "/afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/memory.mif" -- truncated remaining initial content value to fit RAM
 Warning (276020): Inferred RAM node "memorySystem:mem|memory_synthesis:mem|mem_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (19000): Inferred 1 megafunctions from design logic
@@ -1085,10 +1094,10 @@ Info (21057): Implemented 1529 device resources after synthesis - the final reso
     Info (21061): Implemented 1408 logic cells
     Info (21064): Implemented 16 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 102 warnings
-    Info: Peak virtual memory: 1204 megabytes
-    Info: Processing ended: Sun Apr 14 01:52:51 2024
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Peak virtual memory: 1169 megabytes
+    Info: Processing ended: Sun Apr 14 15:50:26 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:21
 
 
 +------------------------------------------+

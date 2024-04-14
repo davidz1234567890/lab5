@@ -2,7 +2,7 @@
  * File: constants.v
  * Created: 4/5/1998
  * Modules contained: none
- * 
+ *
  * Changelog:
  * 4/16/2001: Removed additions from last semester for this term (verBurg)
  * 4/16/2001: Added the "addsp" instruction. (verBurg)
@@ -11,7 +11,7 @@
  * 18 October 2009: Changed some names to caps (mcbender)
  * 23 October 2009: Changed all parameters to    and renamed params.v to defs.v
  * 31 October 2009: Renamed to constants.v
- * 13 Oct 2010: Updated always to always_comb and always_ff.Renamed to.sv(abeera) 
+ * 13 Oct 2010: Updated always to always_comb and always_ff.Renamed to.sv(abeera)
  * 17 Oct 2010: Updated to use enums instead of   's (iclanton)
  * 24 Oct 2010: Added controlPts struct (abeera)
  * 9  Nov 2010: Slightly modified variable names (abeera)
@@ -81,20 +81,20 @@ typedef enum logic{ // Condition code
 
 typedef enum logic [6:0] {
 // Microcode operations (i.e., FSM states)
-   FETCH  = 7'b000_1001, 
-   FETCH1 = 7'b000_1010, 
-   FETCH2 = 7'b000_1011, 
-   DECODE = 7'b000_1111, 
-   STOP   = 7'b111_1111, 
-   STOP1  = 7'b100_0001, 
+   FETCH  = 7'b000_1001,
+   FETCH1 = 7'b000_1010,
+   FETCH2 = 7'b000_1011,
+   DECODE = 7'b000_1111,
+   STOP   = 7'b111_1111,
+   STOP1  = 7'b100_0001,
 
 // Arithmetic operations: ADD, SUB, ADDI/LI
    ADD    = 7'b000_0000,
    SUB    = 7'b000_1000,
-   ADDI   = 7'b001_1000, 
-   ADDI1  = 7'b001_1001, 
-   ADDI2  = 7'b001_1010, 
- 
+   ADDI   = 7'b001_1000,
+   ADDI1  = 7'b001_1001,
+   ADDI2  = 7'b001_1010,
+
 // Logical operations: AND, NOT, OR, XOR
    AND    = 7'b100_1000,
    NOT    = 7'b100_0000,
@@ -109,7 +109,7 @@ typedef enum logic [6:0] {
    SLTI2  = 7'b010_1011,
    SLTI3  = 7'b010_1100,
 
-// Shift operations: SLL, SLLI, SRA, SRAI, SRL, SRLI 
+// Shift operations: SLL, SLLI, SRA, SRAI, SRL, SRLI
    SLL    = 7'b110_0000,
    SLLI   = 7'b110_0001,
    SLLI1  = 7'b110_0010,
@@ -118,13 +118,13 @@ typedef enum logic [6:0] {
    SRAI   = 7'b111_1001,
    SRAI1  = 7'b111_1010,
    SRAI2  = 7'b111_1011,
-   SRL    = 7'b111_0000, 
+   SRL    = 7'b111_0000,
    SRLI   = 7'b111_0001,
    SRLI1  = 7'b111_0010,
    SRLI2  = 7'b111_0011,
 
 // Load operation: LW
-   MV     = 7'b001_0000, 
+   MV     = 7'b001_0000,
    LW     = 7'b001_0100,
    LW1    = 7'b001_0101,
    LW2    = 7'b001_0110,
@@ -139,25 +139,25 @@ typedef enum logic [6:0] {
    SW4    = 7'b010_0000,
 
 // Branch operations: BRA, BRN, BRZ, BRC, BRV, BRNZ
-   BRA    = 7'b111_1100, 
-   BRA1   = 7'b111_1101, 
-   BRA2   = 7'b111_1110, 
-   BRN    = 7'b100_1100, 
-   BRN1   = 7'b100_1101, 
+   BRA    = 7'b111_1100,
+   BRA1   = 7'b111_1101,
+   BRA2   = 7'b111_1110,
+   BRN    = 7'b100_1100,
+   BRN1   = 7'b100_1101,
    BRN2   = 7'b100_1110,
-   BRN3   = 7'b100_1111, 
-   BRZ    = 7'b110_0100, 
-   BRZ1   = 7'b110_0101, 
-   BRZ2   = 7'b110_0110, 
-   BRZ3   = 7'b110_0111, 
-   BRC    = 7'b101_0100, 
-   BRC1   = 7'b101_0101, 
-   BRC2   = 7'b101_0110, 
-   BRC3   = 7'b101_0111, 
-   BRV    = 7'b101_1100, 
-   BRV1   = 7'b101_1101, 
-   BRV2   = 7'b101_1110, 
-   BRV3   = 7'b101_1111, 
+   BRN3   = 7'b100_1111,
+   BRZ    = 7'b110_0100,
+   BRZ1   = 7'b110_0101,
+   BRZ2   = 7'b110_0110,
+   BRZ3   = 7'b110_0111,
+   BRC    = 7'b101_0100,
+   BRC1   = 7'b101_0101,
+   BRC2   = 7'b101_0110,
+   BRC3   = 7'b101_0111,
+   BRV    = 7'b101_1100,
+   BRV1   = 7'b101_1101,
+   BRV2   = 7'b101_1110,
+   BRV3   = 7'b101_1111,
    BRNZ   = 7'b110_1100,
    BRNZ1  = 7'b110_1101,
    BRNZ2  = 7'b110_1110,
@@ -167,7 +167,7 @@ typedef enum logic [6:0] {
 
 } opcode_t;
 
-typedef struct packed 
+typedef struct packed
 {
    alu_op_t alu_op;
    alu_mux_t srcA;

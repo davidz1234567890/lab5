@@ -1,9 +1,9 @@
 {
-    "_vcs_unit__2422599317": [
-        "_vcs_unit__2422599317",
-        "xYkqt",
+    "_vcs_unit__3329936646": [
+        "_vcs_unit__3329936646",
+        "W2vaD",
         "module",
-        15
+        23
     ],
     "std": [
         "std",
@@ -33,7 +33,7 @@
         "SevenSegmentControl",
         "pjySW",
         "module",
-        19
+        21
     ],
     "comb_write_reg": [
         "comb_write_reg",
@@ -45,85 +45,13 @@
         "memory_synthesis",
         "wrad1",
         "module",
-        21
+        19
     ],
     "RISC240_top": [
         "RISC240_top",
         "zRShV",
         "module",
         22
-    ],
-    "Decoder": [
-        "Decoder",
-        "t8TcA",
-        "module",
-        2
-    ],
-    "BarrelShifter": [
-        "BarrelShifter",
-        "p7fYB",
-        "module",
-        3
-    ],
-    "Multiplexer": [
-        "Multiplexer",
-        "UxyT3",
-        "module",
-        4
-    ],
-    "MagComp": [
-        "MagComp",
-        "vaLRj",
-        "module",
-        14
-    ],
-    "Comparator": [
-        "Comparator",
-        "ZPSNi",
-        "module",
-        5
-    ],
-    "Adder": [
-        "Adder",
-        "xUt1z",
-        "module",
-        6
-    ],
-    "Subtracter": [
-        "Subtracter",
-        "pcAkE",
-        "module",
-        7
-    ],
-    "Synchronizer": [
-        "Synchronizer",
-        "mLbx7",
-        "module",
-        8
-    ],
-    "ShiftRegisterSIPO": [
-        "ShiftRegisterSIPO",
-        "QtqVB",
-        "module",
-        9
-    ],
-    "ShiftRegisterPIPO": [
-        "ShiftRegisterPIPO",
-        "w133T",
-        "module",
-        10
-    ],
-    "BarrelShiftRegister": [
-        "BarrelShiftRegister",
-        "ts568",
-        "module",
-        11
-    ],
-    "test_bench": [
-        "test_bench",
-        "YMuFK",
-        "module",
-        12
     ],
     "...MASTER...": [
         "SIM",
