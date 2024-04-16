@@ -2,18 +2,18 @@ addr data   label     opcode  operands
 ---- ----  --------   ------  --------
 0000 F800             BRA             
 0002 0200                     $200    
-3000 FFFF  START      .DW     $FFFF   
-3002 FFFF             .DW     $FFFF   
+0310 FF80  START      .DW     $FF80   
+0312 FF80             .DW     $FF80   
 0200 30C0  INIT       LI      R3      
 0202 0000                     $0      
 0204 3180             LI      R6      
 0206 0000                     $0      
 0208 29C0             LW      R7 R0   
-020A 3002                     $3002   
+020A 0312                     $0312   
 020C 2880             LW      R2 R0   
-020E 3002                     $3002   
+020E 0312                     $0312   
 0210 2840             LW      R1 R0   
-0212 3000                     $3000   
+0212 0310                     $0310   
 0214 5210             SLTI    R0 R2   
 0216 0000                     $0      
 0218 9800             BRN             
@@ -53,5 +53,5 @@ addr data   label     opcode  operands
 025C 30D8             ADDI    R3 R3   
 025E 0001                     $1      
 0260 3803  DONE       SW      R0 R3   
-0262 4000                     $4000   
+0262 0300                     $0300   
 0264 FE00             STOP            

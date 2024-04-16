@@ -3,7 +3,7 @@
         "_vcs_unit__3329936646",
         "W2vaD",
         "module",
-        23
+        2
     ],
     "std": [
         "std",
@@ -33,7 +33,7 @@
         "SevenSegmentControl",
         "pjySW",
         "module",
-        21
+        19
     ],
     "comb_write_reg": [
         "comb_write_reg",
@@ -45,7 +45,7 @@
         "memory_synthesis",
         "wrad1",
         "module",
-        19
+        21
     ],
     "RISC240_top": [
         "RISC240_top",

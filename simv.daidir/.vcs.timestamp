@@ -29,20 +29,14 @@ lab5/library.sv
 lab5/memory.sv
 lab5/regfile.sv
 lab5/RISC240.sv
-67
-XMODIFIERS=@im=ibus
-XDG_VTNR=3
-XDG_SESSION_TYPE=x11
-XDG_SESSION_ID=893
-XDG_SESSION_DESKTOP=gnome-classic
-XDG_SEAT=seat0
+57
+no_proxy=localhost,127.0.0.1,.cmu.edu,.cmu.local
+https_proxy=http://proximus.ece.cmu.edu:3128/
+http_proxy=http://proximus.ece.cmu.edu:3128/
+ftp_proxy=http://proximus.ece.cmu.edu:3128/
+XDG_SESSION_ID=21204
 XDG_RUNTIME_DIR=/run/user/2694455
-XDG_MENU_PREFIX=gnome-
-XDG_DATA_DIRS=/afs/andrew.cmu.edu/usr15/dzhang2/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
-XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
-XAUTHORITY=/run/gdm/auth-for-dzhang2-FGMMqC/database
-WINDOWPATH=1:2:2:2:3:3:3:3
-VTE_VERSION=5204
+XDG_DATA_DIRS=/afs/andrew.cmu.edu/usr15/dzhang2/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
 VMR_MODE_FLAG=32
 VCS_TARGET_ARCH=amd64
 VCS_PATHMAP_PRELOAD_DONE=1
@@ -55,52 +49,48 @@ VCS_DEPTH=0
 VCS_ARG_ADDED_FOR_TMP=1
 VCS_ARCH_OVERRIDE=linux
 VCS_ARCH=linux64
-USERNAME=dzhang2
 UNAME=/bin/uname
 TOOL_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64
 SYN_DIR=/syn/T-2022.03-SP2
 SYNOPSYS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation
-SSH_AUTH_SOCK=/run/user/2694455/keyring/ssh
+SSH_TTY=/dev/pts/3
+SSH_CONNECTION=172.26.76.253 59409 172.19.137.179 22
+SSH_CLIENT=172.26.76.253 59409 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
-SSH_AGENT_PID=6342
 SNPS_VCS_CLANG_PATH=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/clang
 SNPS_INTERNAL_VCS_LINUX_OS=linux
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/6315,unix/unix:/tmp/.ICE-unix/6315
+SELINUX_USE_CURRENT_RANGE=
+SELINUX_ROLE_REQUESTED=
+SELINUX_LEVEL_REQUESTED=
 SCRNAME=vcs
 SCRIPT_NAME=vcs
 QUARTUS_64BIT=1
-QT_IM_MODULE=ibus
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
 QT_GRAPHICSSYSTEM_CHECKED=1
 QTLIB=/usr/lib64/qt-3.3/lib
 QTINC=/usr/lib64/qt-3.3/include
 QTDIR=/usr/lib64/qt-3.3
 OVA_UUM=0
+NO_PROXY=localhost,127.0.0.1,.cmu.edu,.cmu.local
 MODULESHOME=/usr/share/Modules
 MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
 LOADEDMODULES=
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 LC_ALL=C
 KRB5CCNAME=KEYRING:persistent:2694455
+KDEDIRS=/usr
+HTTP_PROXY=http://proximus.ece.cmu.edu:3128/
+HTTPS_PROXY=http://proximus.ece.cmu.edu:3128/
 HISTCONTROL=ignoredups
-GNOME_TERMINAL_SERVICE=:1.88
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/738744a4_8aa3_4c7a_98dc_2e5c6d70f4e7
-GNOME_SHELL_SESSION_MODE=classic
-GNOME_DESKTOP_SESSION_ID=this-is-deprecated
-GJS_DEBUG_TOPICS=JS ERROR;JS LOG
-GJS_DEBUG_OUTPUT=stderr
-GDM_LANG=en_US.UTF-8
-GDMSESSION=gnome-classic
-DESKTOP_SESSION=gnome-classic
+FTP_PROXY=http://proximus.ece.cmu.edu:3128/
 DC_HOME=/syn/T-2022.03-SP2/
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-WKKx5FqGME,guid=50e3b9d90bcb8190994419c5661c1b0f
 CVS_RSH=ssh
-COLORTERM=truecolor
 BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
 AKLOG=/usr/bin/aklog
 0
 0
 9
-1713122919 constants.sv
+1713224939 constants.sv
 1620173337 lab5/RISC240.sv
 1620173337 /afs/ece.cmu.edu/class/ee240/bin/RISC240/RISC240.sv
 1607464370 lab5/regfile.sv
@@ -122,5 +112,5 @@ AKLOG=/usr/bin/aklog
 1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
-1713123475 simv.daidir
+1713303726 simv.daidir
 -1 partitionlib
