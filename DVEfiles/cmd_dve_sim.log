@@ -9,9 +9,9 @@ synopsys::dump -autoflush on -fid VPD0
 set ::dve_fid VPD0
 synUtils::setDVEInitPhase 0
 ucliCore::getToolPID
-synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpSgYHbW
-synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.dzhang2.7672}
-synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.dzhang2.7672}
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpbPgTVy
+synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.dzhang2.10024}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.dzhang2.10024}
 config endofsim noexit
 config onfail enable all
 config syscaddplainmembers
@@ -19,14 +19,9 @@ config syscaddsourcenames
 config syscaddstructtypes
 synopsys::listing -disable
 ucliGUI::vpdAddHierarchy -scope test_bench.DUT -depth 1 -file /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/inter.vpd; synopsys::dump -flush VPD0
-synopsys::dump -add {test_bench.DUT.A_shifted test_bench.DUT.AeqB test_bench.DUT.AgtB test_bench.DUT.B_shifted test_bench.DUT.D test_bench.DUT.ZN_flags test_bench.DUT.a test_bench.DUT.a_new test_bench.DUT.b test_bench.DUT.b_abs test_bench.DUT.b_new test_bench.DUT.clear_counter test_bench.DUT.clear_product test_bench.DUT.clock test_bench.DUT.count test_bench.DUT.done test_bench.DUT.en_counter test_bench.DUT.load test_bench.DUT.load_product test_bench.DUT.not_b test_bench.DUT.not_product test_bench.DUT.num_to_add test_bench.DUT.out test_bench.DUT.product test_bench.DUT.product_in test_bench.DUT.reset test_bench.DUT.sel test_bench.DUT.sel_a test_bench.DUT.select_add_amount test_bench.DUT.start test_bench.DUT.up } -aggregates  -fid VPD0
+synopsys::dump -add {test_bench.DUT.A_shifted test_bench.DUT.AeqB test_bench.DUT.AgtB test_bench.DUT.B_shifted test_bench.DUT.D test_bench.DUT.ZN_flags test_bench.DUT.a test_bench.DUT.a_new test_bench.DUT.b test_bench.DUT.b_abs test_bench.DUT.b_new test_bench.DUT.clear_counter test_bench.DUT.clear_product test_bench.DUT.clock test_bench.DUT.count test_bench.DUT.done test_bench.DUT.en_counter test_bench.DUT.load test_bench.DUT.load_product test_bench.DUT.not_b test_bench.DUT.not_needed test_bench.DUT.not_product test_bench.DUT.num_to_add test_bench.DUT.out test_bench.DUT.product test_bench.DUT.product_in test_bench.DUT.reset test_bench.DUT.sel test_bench.DUT.sel_a test_bench.DUT.select_add_amount test_bench.DUT.start test_bench.DUT.up } -aggregates  -fid VPD0
 synopsys::run
 set ucliGUI::state
 set ucliGUI::state
 set ucliGUI::state
 set ucliGUI::state
-if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
-synopsys::finish
-set ucliGUI::state
-set ucliGUI::state
-ucli_exit

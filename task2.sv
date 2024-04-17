@@ -91,8 +91,8 @@ always_comb begin
       nextState = start ? in_multiply : nothing;
       en_counter = 1'b0;
       load_product = 1'b0;
-      clear_counter = start ? 1'b1 : 1'b0;
-      clear_product = start ? 1'b1 : 1'b0;
+      clear_counter = 1'b1;//start ? 1'b1 : 1'b0;
+      clear_product = 1'b1;//start ? 1'b1 : 1'b0;
     end
     in_multiply: begin
       nextState = done ? nothing : in_multiply;
