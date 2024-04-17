@@ -6,3 +6,7 @@ The file '/afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/inter.vpd' was opened 
 $finish called from file "task2.sv", line 185.
 $finish at simulation time                  305
 Simulation complete, time is 305.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 305
+CPU Time:      0.400 seconds;       Data structure size:   0.0Mb
+Tue Apr 16 19:00:37 2024

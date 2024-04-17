@@ -72,8 +72,8 @@ fsm control(.start, .done, .reset, .clock,
           .en_counter, .clear_counter, .load_product, .clear_product);
 logic not_needed;
 
-assign ZN_flags[1] = out[15];
-assign ZN_flags[0] = (out == 16'd0);
+assign ZN_flags[1] = out[15]; //Negative flag
+assign ZN_flags[0] = (out == 16'd0); //zero flag
 
 //negative bit is index 1
 //zero bit is index 0
@@ -182,6 +182,51 @@ module test_bench;
       @(posedge clock);
       @(posedge clock);
       @(posedge clock);
+      start <= 1'b0; a <= 8'b0000_0101; b <= 8'b0000_0011;
+      @(posedge clock);
+      start <= 1'b1;
+      @(posedge clock);
+      start <= 1'b0;
+      @(posedge clock);
+
+      @(posedge clock);
+
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+
+
+
+      start <= 1'b0; a <= 8'h3A; b <= 8'h50;
+      @(posedge clock);
+      start <= 1'b1;
+      @(posedge clock);
+      start <= 1'b0;
+      @(posedge clock);
+
+      @(posedge clock);
+
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
+      @(posedge clock);
       $finish;
 
     end
@@ -190,3 +235,7 @@ module test_bench;
 
 
 endmodule: test_bench
+
+
+
+//add comment here

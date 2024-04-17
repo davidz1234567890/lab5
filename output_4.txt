@@ -1,0 +1,16 @@
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Apr 16 18:09 2024
+
+Warning-[STASKW_CO] Cannot open file
+lab5_copy/library.sv, 93
+  The file 'memory.hex' could not be opened. No such file or directory.
+  Please ensure that the file exists with proper permissions.
+
+File not found: memory.hex must be in the local directory
+$finish called from file "lab5_copy/library.sv", line 106.
+$finish at simulation time                    0
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 0
+CPU Time:      0.750 seconds;       Data structure size:   0.0Mb
+Tue Apr 16 18:09:40 2024

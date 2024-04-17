@@ -68,3 +68,5 @@ gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[1]}   }
 gui_list_select -id Wave.1 -selected  { {test_bench.DUT.ZN_flags[0]}   }
 gui_marker_move -id  Wave.1 C1 250
 gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_wv_scroll_hslidermove -id  Wave.1 0
+gui_close_window -window TopLevel.2

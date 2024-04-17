@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for RISC240_top
-Sun Apr 14 15:51:10 2024
+Tue Apr 16 18:26:30 2024
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
 
 
@@ -99,15 +99,15 @@ agreement for further details.
 ; Number detected on machine ; 20          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.32        ;
+; Average used               ; 1.48        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   9.0%      ;
-;     Processor 3            ;   8.9%      ;
-;     Processor 4            ;   8.9%      ;
-;     Processors 5-12        ;   0.7%      ;
+;     Processor 2            ;  13.1%      ;
+;     Processor 3            ;  13.0%      ;
+;     Processor 4            ;  13.0%      ;
+;     Processors 5-12        ;   1.1%      ;
 +----------------------------+-------------+
 
 
@@ -613,8 +613,8 @@ No paths to report.
 ; 1.221 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[21] ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[21]                                                                ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.043      ; 1.435      ;
 ; 1.221 ; datapath:dp|register:memDataReg|out[2]                     ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[25]                                                                ; KEY[0]       ; KEY[0]      ; 0.000        ; -0.017     ; 1.375      ;
 ; 1.235 ; datapath:dp|register:memDataReg|out[9]                     ; datapath:dp|register:memDataReg|out[9]                                                                                    ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.450      ;
-; 1.255 ; datapath:dp|register:memDataReg|out[8]                     ; datapath:dp|register:memDataReg|out[8]                                                                                    ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.045      ; 1.471      ;
 ; 1.255 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[25] ; memorySystem:mem|memory_synthesis:mem|altsyncram:mem_rtl_0|altsyncram_k7g1:auto_generated|ram_block1a0~porta_datain_reg0  ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.387      ; 1.843      ;
+; 1.255 ; datapath:dp|register:memDataReg|out[8]                     ; datapath:dp|register:memDataReg|out[8]                                                                                    ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.045      ; 1.471      ;
 ; 1.257 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[39] ; datapath:dp|register:memDataReg|out[9]                                                                                    ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.290      ; 1.718      ;
 ; 1.265 ; controlpath:cp|currState[5]                                ; controlpath:cp|currState[4]                                                                                               ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.043      ; 1.479      ;
 ; 1.271 ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[51] ; memorySystem:mem|memory_synthesis:mem|mem_rtl_0_bypass[51]                                                                ; KEY[0]       ; KEY[0]      ; 0.000        ; 0.044      ; 1.486      ;
@@ -777,8 +777,8 @@ No paths to report.
 ; -5.660 ; datapath:dp|reg_file:rfile|register:reg6|out[7] ; datapath:dp|reg_file:rfile|register:reg2|out[0]  ; KEY[0]       ; KEY[0]      ; 1.000        ; 0.004      ; 6.671      ;
 ; -5.659 ; datapath:dp|register:instrReg|out[3]            ; datapath:dp|reg_file:rfile|register:reg5|out[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.020     ; 6.646      ;
 ; -5.658 ; datapath:dp|register:instrReg|out[5]            ; datapath:dp|register:instrReg|out[0]             ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.093     ; 6.572      ;
-; -5.658 ; datapath:dp|reg_file:rfile|register:reg6|out[7] ; datapath:dp|reg_file:rfile|register:reg5|out[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.149     ; 6.516      ;
 ; -5.658 ; datapath:dp|register:instrReg|out[0]            ; datapath:dp|register:instrReg|out[4]             ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.011     ; 6.654      ;
+; -5.658 ; datapath:dp|reg_file:rfile|register:reg6|out[7] ; datapath:dp|reg_file:rfile|register:reg5|out[8]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.149     ; 6.516      ;
 ; -5.655 ; datapath:dp|register:instrReg|out[4]            ; datapath:dp|reg_file:rfile|register:reg5|out[14] ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.020     ; 6.642      ;
 ; -5.653 ; datapath:dp|reg_file:rfile|register:reg6|out[5] ; datapath:dp|register:condCodeReg|out[3]          ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.054     ; 6.606      ;
 ; -5.652 ; datapath:dp|reg_file:rfile|register:reg6|out[5] ; datapath:dp|reg_file:rfile|register:reg5|out[0]  ; KEY[0]       ; KEY[0]      ; 1.000        ; -0.149     ; 6.510      ;
@@ -1561,7 +1561,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
-    Info: Processing started: Sun Apr 14 15:51:06 2024
+    Info: Processing started: Tue Apr 16 18:26:28 2024
 Info: Command: quartus_sta task3 -c RISC240_top
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1633,9 +1633,9 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1152 megabytes
-    Info: Processing ended: Sun Apr 14 15:51:10 2024
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 1151 megabytes
+    Info: Processing ended: Tue Apr 16 18:26:30 2024
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

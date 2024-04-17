@@ -1,15 +1,99 @@
 {
-    "_vcs_unit__3329936646": [
-        "_vcs_unit__3329936646",
-        "W2vaD",
+    "_vcs_unit__2422599317": [
+        "_vcs_unit__2422599317",
+        "xYkqt",
         "module",
-        2
+        20
     ],
     "std": [
         "std",
         "reYIK",
         "module",
         1
+    ],
+    "Decoder": [
+        "Decoder",
+        "t8TcA",
+        "module",
+        19
+    ],
+    "BarrelShifter": [
+        "BarrelShifter",
+        "p7fYB",
+        "module",
+        14
+    ],
+    "Multiplexer": [
+        "Multiplexer",
+        "UxyT3",
+        "module",
+        12
+    ],
+    "MagComp": [
+        "MagComp",
+        "vaLRj",
+        "module",
+        11
+    ],
+    "Comparator": [
+        "Comparator",
+        "ZPSNi",
+        "module",
+        10
+    ],
+    "Adder": [
+        "Adder",
+        "xUt1z",
+        "module",
+        9
+    ],
+    "Subtracter": [
+        "Subtracter",
+        "pcAkE",
+        "module",
+        8
+    ],
+    "Synchronizer": [
+        "Synchronizer",
+        "mLbx7",
+        "module",
+        7
+    ],
+    "ShiftRegisterSIPO": [
+        "ShiftRegisterSIPO",
+        "QtqVB",
+        "module",
+        6
+    ],
+    "ShiftRegisterPIPO": [
+        "ShiftRegisterPIPO",
+        "w133T",
+        "module",
+        5
+    ],
+    "BarrelShiftRegister": [
+        "BarrelShiftRegister",
+        "ts568",
+        "module",
+        4
+    ],
+    "Multiplier": [
+        "Multiplier",
+        "W39hm",
+        "module",
+        18
+    ],
+    "Multiplier_0000__port_gym": [
+        "Multiplier_0000__port_gym",
+        "q8H7S",
+        "module",
+        17
+    ],
+    "test_bench": [
+        "test_bench",
+        "YMuFK",
+        "module",
+        21
     ],
     "memory1024x16": [
         "memory1024x16",
@@ -21,37 +105,37 @@
         "memory1024x16_program",
         "LTm6Y",
         "module",
-        17
+        15
     ],
     "SevenSegmentDigit": [
         "SevenSegmentDigit",
         "wDpck",
         "module",
-        18
+        3
     ],
     "SevenSegmentControl": [
         "SevenSegmentControl",
         "pjySW",
         "module",
-        19
+        2
     ],
     "comb_write_reg": [
         "comb_write_reg",
         "TiIVQ",
         "module",
-        20
+        22
     ],
     "memory_synthesis": [
         "memory_synthesis",
         "wrad1",
         "module",
-        21
+        23
     ],
     "RISC240_top": [
         "RISC240_top",
         "zRShV",
         "module",
-        22
+        24
     ],
     "...MASTER...": [
         "SIM",

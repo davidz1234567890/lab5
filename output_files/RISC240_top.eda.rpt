@@ -1,5 +1,5 @@
 EDA Netlist Writer report for RISC240_top
-Sun Apr 14 15:51:12 2024
+Tue Apr 16 18:26:33 2024
 Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Apr 14 15:51:12 2024 ;
+; EDA Netlist Writer Status ; Successful - Tue Apr 16 18:26:33 2024 ;
 ; Revision Name             ; RISC240_top                           ;
 ; Top-level Entity Name     ; RISC240_top                           ;
 ; Family                    ; Cyclone IV E                          ;
@@ -89,7 +89,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition
-    Info: Processing started: Sun Apr 14 15:51:11 2024
+    Info: Processing started: Tue Apr 16 18:26:31 2024
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off task3 -c RISC240_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file RISC240_top_7_1200mv_85c_slow.vo in folder "/afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/simulation/modelsim/" for EDA simulation tool
@@ -102,8 +102,8 @@ Info (204019): Generated file RISC240_top_min_1200mv_0c_v_fast.sdo in folder "/a
 Info (204019): Generated file RISC240_top_v.sdo in folder "/afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 1189 megabytes
-    Info: Processing ended: Sun Apr 14 15:51:13 2024
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Tue Apr 16 18:26:34 2024
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:01
 
 

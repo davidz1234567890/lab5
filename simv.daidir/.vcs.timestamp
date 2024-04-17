@@ -1,5 +1,5 @@
 0 
-29
+31
 -Mamsrun=
 -Masflags=
 -Mcc=gcc
@@ -21,20 +21,22 @@
 -picarchive
 -sverilog
 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/bin/vcs1
-lab5/alu.sv
-lab5/constants.sv
-lab5/controlpath.sv
-lab5/datapath.sv
-lab5/library.sv
-lab5/memory.sv
-lab5/regfile.sv
-lab5/RISC240.sv
+mylibrary.sv
+task2.sv
+alu.sv
+constants.sv
+controlpath.sv
+datapath.sv
+library.sv
+memory.sv
+regfile.sv
+RISC240.sv
 57
 no_proxy=localhost,127.0.0.1,.cmu.edu,.cmu.local
 https_proxy=http://proximus.ece.cmu.edu:3128/
 http_proxy=http://proximus.ece.cmu.edu:3128/
 ftp_proxy=http://proximus.ece.cmu.edu:3128/
-XDG_SESSION_ID=21204
+XDG_SESSION_ID=21016
 XDG_RUNTIME_DIR=/run/user/2694455
 XDG_DATA_DIRS=/afs/andrew.cmu.edu/usr15/dzhang2/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
 VMR_MODE_FLAG=32
@@ -53,9 +55,9 @@ UNAME=/bin/uname
 TOOL_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64
 SYN_DIR=/syn/T-2022.03-SP2
 SYNOPSYS_HOME=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation
-SSH_TTY=/dev/pts/3
-SSH_CONNECTION=172.26.76.253 59409 172.19.137.179 22
-SSH_CLIENT=172.26.76.253 59409 22
+SSH_TTY=/dev/pts/2
+SSH_CONNECTION=172.26.76.253 52284 172.19.138.12 22
+SSH_CLIENT=172.26.76.253 52284 22
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
 SNPS_VCS_CLANG_PATH=/afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/clang
 SNPS_INTERNAL_VCS_LINUX_OS=linux
@@ -89,28 +91,21 @@ BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
 AKLOG=/usr/bin/aklog
 0
 0
-9
-1713224939 constants.sv
-1620173337 lab5/RISC240.sv
-1620173337 /afs/ece.cmu.edu/class/ee240/bin/RISC240/RISC240.sv
-1607464370 lab5/regfile.sv
-1607464370 /afs/ece.cmu.edu/class/ee240/bin/RISC240/regfile.sv
-1607463651 lab5/memory.sv
-1607463651 /afs/ece.cmu.edu/class/ee240/bin/RISC240/memory.sv
-1572927391 lab5/library.sv
-1572927391 /afs/ece.cmu.edu/class/ee240/bin/RISC240/library.sv
-1670537390 lab5/datapath.sv
-1670537390 /afs/ece.cmu.edu/class/ee240/bin/RISC240/datapath.sv
-1670392286 lab5/controlpath.sv
-1670392286 /afs/ece.cmu.edu/class/ee240/bin/RISC240/controlpath.sv
-1574198304 lab5/constants.sv
-1574198304 /afs/ece.cmu.edu/class/ee240/bin/RISC240/constants.sv
-1670029744 lab5/alu.sv
-1670029744 /afs/ece.cmu.edu/class/ee240/bin/RISC240/alu.sv
+10
+1713315550 RISC240.sv
+1713314603 regfile.sv
+1713314603 memory.sv
+1713314603 library.sv
+1713315672 datapath.sv
+1713315200 controlpath.sv
+1713315309 constants.sv
+1713314603 alu.sv
+1713314412 task2.sv
+1712710434 mylibrary.sv
 4
 1654054205 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvirsim.so
 1654053585 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/liberrorinf.so
 1654053489 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libsnpsmalloc.so
 1654053565 /afs/ece.cmu.edu/support/synopsys/synopsys.release/T-Foundation/vcs/T-2022.06/linux64/lib/libvfs.so
-1713303726 simv.daidir
+1713315687 simv.daidir
 -1 partitionlib

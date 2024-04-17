@@ -2,8 +2,8 @@
       BRA $200
 
       .ORG $0310
-START .DW $FF80 ; R1 <- -128 for now
-      .DW $FF80 ; R2 <- +127 for now
+START .DW $0001 ; R1 <- -128 for now
+      .DW $0001 ; R2 <- +127 for now
 
       .ORG $200
 INIT  LI R3, $0 ; clears the product

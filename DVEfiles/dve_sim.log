@@ -34,3 +34,14 @@
 16:21:21    49 --> ...                                                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
 16:21:21    50 --> ...  [tcl] set dveMisc::result
 16:21:21    51 --> ...      [tcl] gui_update_simulator_buttons
+19:00:37    52 --> ...          [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+19:00:37    53 --> ...              [tcl] synopsys::finish
+19:00:37    54 --> ...                  [tcl] set ucliGUI::state
+19:00:37    55 --> ...                      [tcl] gui_update_simulator_buttons
+19:00:37    56 --> ...                          [tcl] set ucliGUI::state
+19:00:37    57 --> ...                              [tcl] catch {senv activeDomain} dveMisc::result 
+19:00:37    58 --> ...                                  [tcl] set dveMisc::result
+19:00:37    59 --> ...                                      [tcl] gui_update_simulator_buttons
+19:00:37    60 --> ...                                          [tcl] catch {senv activeDomain} dveMisc::result 
+19:00:37    61 --> ...                                              [tcl] set dveMisc::result
+19:00:37    62 --> ...                                                  [tcl] ucli_exit

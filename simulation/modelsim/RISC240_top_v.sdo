@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "RISC240_top")
-  (DATE "04/14/2024 15:51:12")
+  (DATE "04/16/2024 18:26:33")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 16.1.2 Build 203 01/18/2017 SJ Standard Edition")

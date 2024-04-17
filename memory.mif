@@ -63,6 +63,6 @@ DEPTH = 65536;         % Memory depth and width are required   %
 0260 : 3803;
 0262 : 0300;
 0264 : FE00;
-0310 : FF80;
-0312 : FF80;
+0310 : 0001;
+0312 : 0001;
 END;
