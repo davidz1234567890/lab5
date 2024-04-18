@@ -63,6 +63,7 @@ module controlpath (
 
    always_comb begin
       start = 1'b0;
+      
       case (currState)
         FETCH: begin
            out = {F_A, MUX_PC, 2'bxx, DEST_MAR, NO_LOAD, NO_RD, NO_WR};
@@ -368,13 +369,15 @@ module controlpath (
            nextState = WAIT;
         end
         WAIT: begin
-          out = {4'bxxxx, 2'bxx, 2'bxx, DEST_NONE, NO_LOAD, NO_RD, NO_WR};
-           nextState = done ? DONE : WAIT;
+          out = (~done) ? {4'bxxxx, 2'bxx, 2'bxx, DEST_NONE, NO_LOAD, NO_RD, NO_WR}
+                : {4'bxxxx, 2'bxx, 2'bxx, DEST_REG, LOAD_CC, NO_RD, NO_WR};
+           nextState = done ? FETCH : WAIT;
         end
-        DONE: begin
-          out = {4'bxxxx, 2'bxx, 2'bxx, DEST_REG, LOAD_CC, NO_RD, NO_WR};
+        /*DONE: begin
+          out = 
+          another = 1'b1;
            nextState = FETCH;
-        end
+        end*/
         MULI: begin
            out = {F_A, MUX_PC, 2'bxx, DEST_MAR, NO_LOAD, NO_RD, NO_WR};
            nextState = MULI1;

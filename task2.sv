@@ -15,13 +15,20 @@ Counter #(4) count_to_8(.en(en_counter), .clear(clear_counter),
          .D,
          .clock,
          .Q(count));
-assign done = (count == 4'd8);
+assign done = (count === 4'h8) ? 1'b1 : 1'b0;//(count == 4'd8);
 
 logic sel, sel_a, AeqB, AgtB;
 logic [15:0] b_abs;
 logic [15:0] not_b;
 
-
+/*Register #(8) a_register(.en(load_product), .clear(clear_product),
+         .D(a),
+         .clock,
+         .Q(product));
+Register #(8) b_register(.en(load_product), .clear(clear_product),
+         .D(b),
+         .clock,
+         .Q(product));*/
 /*MagComp #(8) determine_if_neg(.A(b),
     .B(8'd0),
     .AltB(sel), .AeqB, .AgtB);*/
@@ -91,15 +98,15 @@ always_comb begin
       nextState = start ? in_multiply : nothing;
       en_counter = 1'b0;
       load_product = 1'b0;
-      clear_counter = 1'b1;//start ? 1'b1 : 1'b0;
-      clear_product = 1'b1;//start ? 1'b1 : 1'b0;
+      clear_counter = 1'b1;
+      clear_product = 1'b1;
     end
     in_multiply: begin
       nextState = done ? nothing : in_multiply;
       en_counter = done ? 1'b0 : 1'b1;
       load_product = done ? 1'b0 : 1'b1;
       clear_counter = done ? 1'b1 : 1'b0;
-      clear_product = done ? 1'b1 : 1'b0;
+      clear_product = 1'b0;//done ? 1'b1 : 1'b0;
 
     end
 
@@ -206,9 +213,9 @@ module test_bench;
 
 
 
-      start <= 1'b0; a <= 8'h3A; b <= 8'h50;
+      start <= 1'b1; a <= 8'h3A; b <= 8'h50;
       @(posedge clock);
-      start <= 1'b1;
+      start <= 1'b0;
       @(posedge clock);
       start <= 1'b0;
       @(posedge clock);

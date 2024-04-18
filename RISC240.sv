@@ -71,6 +71,8 @@ module RISC240_top();
 
 
 logic start, done;
+logic [15:0] output_multiply;
+logic [7:0] newA, newB;
    controlpath cp(.out(cPts),
                   .CCin(condCodes),
                   .IRIn(ir),
@@ -78,6 +80,7 @@ logic start, done;
                   .reset_L(reset_L),
                   .currState(currState),
                   .start(start),
+                 
                   .done(done),
                   .nextState(nextState));
 
@@ -89,6 +92,8 @@ logic start, done;
                .result(aluOut),
                .pc(pc),
                .start(start),
+             .output_multiply,
+             .newA, .newB,
                   .done(done),
                .memAddr(memAddr),
                .MDRout(memData),
@@ -193,8 +198,8 @@ logic start, done;
       $display("AddrBus: %h  DataBus: %h", memAddr, dataBus);
       $display("ALUop: %s     SrcA: %s      SrcB: %s",
            cPts.alu_op.name, cPts.srcA.name, cPts.srcB.name);
-      $display("ALUInA: 0x%h  ALUInB: 0x%h  ALUOut: 0x%h",
-           aluSrc1, aluSrc2, aluOut);
+      $display("ALUInA: 0x%h  ALUInB: 0x%h  ALUOut: 0x%h Done: 0x%h outputmul: 0x%h newA: 0x%h newB: 0x%h",
+           aluSrc1, aluSrc2, aluOut, done, output_multiply, newA, newB );
       $display("PC:     0x%h  IR:     0x%h", pc, ir);
       $display("MAR:    0x%h  MDR     0x%h  ZCNV:   %b", memAddr, memData, condCodes);
       $display("==================================================");

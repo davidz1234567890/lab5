@@ -38,6 +38,8 @@ module datapath (
    output [2:0]  selRS1,
    output [2:0]  selRS2,
    input start, //new code here
+  output [15:0] output_multiply,
+  output [7:0] newA, newB,
    output done, //new code here
    input controlPts  cPts,
    input         clock,
@@ -107,9 +109,9 @@ module datapath (
    register #(.WIDTH(4)) condCodeReg(.out(condCodes), .in(CC_good), .load_L(cPts.lcc_L),
                                      .clock(clock), .reset_L(reset_L));
    
-   logic [15:0] output_multiply;
+   //logic [15:0] output_multiply;
    logic [1:0] flags;
-   logic [7:0] newA, newB;
+   //logic [7:0] newA, newB;
    assign newA = aluSrcA[7:0];
    assign newB = aluSrcB[7:0];
    Multiplier DUT_multiply(.start, .reset(~reset_L), .clock,
@@ -123,6 +125,10 @@ module datapath (
     .I1(output_multiply),
     .S(done),
     .Y(result));
+    /*always_comb begin
+      result = aluResult;
+      if(done) result = output_multiply;
+    end*/
 
     logic [3:0] updated_CC_from_multiply;
     assign updated_CC_from_multiply[3] = flags[0]; //for the Z flag

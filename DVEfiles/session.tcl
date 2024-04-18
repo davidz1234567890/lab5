@@ -1,6 +1,6 @@
 # Begin_DVE_Session_Save_Info
 # DVE full session
-# Saved on Tue Apr 16 22:35:50 2024
+# Saved on Thu Apr 18 13:37:51 2024
 # Designs open: 1
 #   Sim: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/simv
 # Toplevel windows open: 1
@@ -66,7 +66,7 @@ if {![gui_exist_window -window TopLevel.1]} {
 } else { 
     set TopLevel.1 TopLevel.1
 }
-gui_show_window -window ${TopLevel.1} -show_state normal -rect {{8 32} {1258 654}}
+gui_show_window -window ${TopLevel.1} -show_state normal -rect {{8 32} {1252 648}}
 
 # ToolBar settings
 gui_set_toolbar_attributes -toolbar {TimeOperations} -dock_state top
@@ -125,11 +125,11 @@ gui_set_window_pref_key -window ${DLPane.1} -key dock_width -value_type integer 
 gui_set_window_pref_key -window ${DLPane.1} -key dock_height -value_type integer -value 392
 gui_set_window_pref_key -window ${DLPane.1} -key dock_offset -value_type integer -value 0
 gui_update_layout -id ${DLPane.1} {{left 0} {top 0} {width 105} {height 392} {dock_state left} {dock_on_new_line true} {child_data_colvariable 140} {child_data_colvalue 100} {child_data_coltype 40} {child_data_col1 0} {child_data_col2 1} {child_data_col3 2}}
-set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 132]
+set Console.1 [gui_create_window -type Console -parent ${TopLevel.1} -dock_state bottom -dock_on_new_line true -dock_extent 126]
 gui_set_window_pref_key -window ${Console.1} -key dock_width -value_type integer -value 1220
-gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 132
+gui_set_window_pref_key -window ${Console.1} -key dock_height -value_type integer -value 126
 gui_set_window_pref_key -window ${Console.1} -key dock_offset -value_type integer -value 0
-gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 1250} {height 131} {dock_state bottom} {dock_on_new_line true}}
+gui_update_layout -id ${Console.1} {{left 0} {top 0} {width 1244} {height 125} {dock_state bottom} {dock_on_new_line true}}
 #### Start - Readjusting docked view's offset / size
 set dockAreaList { top left right bottom }
 foreach dockArea $dockAreaList {
