@@ -3,7 +3,7 @@ addr data   label     opcode  operands
 0000 3100             LI      R4      
 0002 0001                     $1      
 0004 31C0             LI      R7      
-0006 0001                     $1      
+0006 0005                     $5      
 0008 3140             LI      R5      
 000A 0003                     $3      
 000C 607D             .DW     $607D   

@@ -1,15 +1,15 @@
 # Begin_DVE_Session_Save_Info
 # DVE restart session
-# Saved on Tue Apr 9 21:44:12 2024
+# Saved on Thu Apr 18 13:48:20 2024
 # Designs open: 1
 #   Sim: /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/simv
 # Toplevel windows open: 2
 # 	TopLevel.1
 # 	TopLevel.2
 #   Source.1: Decoder
-#   Wave.1: 32 signals
+#   Wave.1: 37 signals
 #   Group count = 1
-#   Group Group1 signal count = 32
+#   Group Group1 signal count = 37
 # End_DVE_Session_Save_Info
 
 # DVE version: T-2022.06_Full64
@@ -86,7 +86,6 @@ gui_set_time_units 1s
 # Global: Signal Compare
 
 # Global: Signal Groups
-gui_load_child_values {test_bench.DUT.control}
 gui_load_child_values {test_bench.DUT}
 
 
@@ -94,7 +93,7 @@ set _session_group_1 Group1
 gui_sg_create "$_session_group_1"
 set Group1 "$_session_group_1"
 
-gui_sg_addsignal -group "$_session_group_1" { test_bench.DUT.start test_bench.DUT.reset test_bench.DUT.clock test_bench.DUT.a test_bench.DUT.b test_bench.DUT.out test_bench.DUT.done test_bench.DUT.ZN_flags test_bench.DUT.up test_bench.DUT.load test_bench.DUT.D test_bench.DUT.en_counter test_bench.DUT.clear_counter test_bench.DUT.count test_bench.DUT.B_abs test_bench.DUT.sel test_bench.DUT.AeqB test_bench.DUT.AgtB test_bench.DUT.b_abs test_bench.DUT.not_b test_bench.DUT.not_product test_bench.DUT.product test_bench.DUT.A_shifted test_bench.DUT.B_shifted test_bench.DUT.load_product test_bench.DUT.clear_product test_bench.DUT.product_in test_bench.DUT.select_add_amount test_bench.DUT.num_to_add test_bench.DUT.not_needed test_bench.DUT.control.State test_bench.DUT.control.nextState }
+gui_sg_addsignal -group "$_session_group_1" { test_bench.DUT.start test_bench.DUT.reset test_bench.DUT.clock test_bench.DUT.a test_bench.DUT.b test_bench.DUT.out test_bench.DUT.done test_bench.DUT.ZN_flags test_bench.DUT.up test_bench.DUT.load test_bench.DUT.D test_bench.DUT.en_counter test_bench.DUT.clear_counter test_bench.DUT.count test_bench.DUT.load_a test_bench.DUT.load_b test_bench.DUT.sel test_bench.DUT.sel_a test_bench.DUT.AeqB test_bench.DUT.AgtB test_bench.DUT.b_abs test_bench.DUT.not_b test_bench.DUT.a_out test_bench.DUT.b_out test_bench.DUT.a_new test_bench.DUT.b_new test_bench.DUT.not_product test_bench.DUT.product test_bench.DUT.A_shifted test_bench.DUT.B_shifted test_bench.DUT.load_product test_bench.DUT.clear_product test_bench.DUT.product_in test_bench.DUT.select_add_amount test_bench.DUT.num_to_add test_bench.DUT.not_needed test_bench.DUT.a_register.Q }
 
 # Global: Highlighting
 
@@ -125,25 +124,25 @@ gui_list_set_filter -id ${Hier.1} -text {*}
 gui_change_design -id ${Hier.1} -design Sim
 catch {gui_list_expand -id ${Hier.1} test_bench}
 catch {gui_list_expand -id ${Hier.1} test_bench.DUT}
-catch {gui_list_select -id ${Hier.1} {test_bench.DUT.control}}
-gui_view_scroll -id ${Hier.1} -vertical -set 118
-gui_view_scroll -id ${Hier.1} -horizontal -set 0
+catch {gui_list_select -id ${Hier.1} {test_bench.DUT.a_register}}
+gui_view_scroll -id ${Hier.1} -vertical -set 138
+gui_view_scroll -id ${Hier.1} -horizontal -set 40
 
 # Data 'Data.1'
 gui_list_set_filter -id ${Data.1} -list { {Buffer 1} {Input 1} {Others 1} {Linkage 1} {Output 1} {LowPower 1} {Parameter 1} {All 1} {Aggregate 1} {LibBaseMember 1} {Event 1} {Assertion 1} {Constant 1} {Interface 1} {BaseMembers 1} {Signal 1} {$unit 1} {Inout 1} {Variable 1} }
 gui_list_set_filter -id ${Data.1} -text {*}
-gui_list_show_data -id ${Data.1} {test_bench.DUT.control}
+gui_list_show_data -id ${Data.1} {test_bench.DUT.a_register}
 gui_show_window -window ${Data.1}
-catch { gui_list_select -id ${Data.1} {test_bench.DUT.control.State test_bench.DUT.control.nextState }}
+catch { gui_list_select -id ${Data.1} {test_bench.DUT.a_register.Q }}
 gui_view_scroll -id ${Data.1} -vertical -set 0
 gui_view_scroll -id ${Data.1} -horizontal -set 0
-gui_view_scroll -id ${Hier.1} -vertical -set 118
-gui_view_scroll -id ${Hier.1} -horizontal -set 0
+gui_view_scroll -id ${Hier.1} -vertical -set 138
+gui_view_scroll -id ${Hier.1} -horizontal -set 40
 
 # Source 'Source.1'
 gui_src_value_annotate -id ${Source.1} -switch false
 gui_set_env TOGGLE::VALUEANNOTATE 0
-gui_open_source -id ${Source.1}  -replace -active Decoder /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/library.sv
+gui_open_source -id ${Source.1}  -replace -active Decoder /afs/ece.cmu.edu/usr/dzhang2/Private/18240/lab5/mylibrary.sv
 gui_view_scroll -id ${Source.1} -vertical -set 30
 gui_src_set_reusable -id ${Source.1}
 
@@ -155,7 +154,7 @@ set origWaveHeight [gui_get_pref_value -category Wave -key waveRowHeight]
 gui_list_set_height -id Wave -height 25
 set origGroupCreationState [gui_list_create_group_when_add -wave]
 gui_list_create_group_when_add -wave -disable
-gui_wv_zoom_timerange -id ${Wave.1} 0 278
+gui_wv_zoom_timerange -id ${Wave.1} 71 349
 gui_list_add_group -id ${Wave.1} -after {New Group} {Group1}
 gui_seek_criteria -id ${Wave.1} {Any Edge}
 
@@ -174,7 +173,7 @@ gui_list_set_filter -id ${Wave.1} -list { {Buffer 1} {Input 1} {Others 1} {Linka
 gui_list_set_filter -id ${Wave.1} -text {*}
 gui_list_set_insertion_bar  -id ${Wave.1} -group Group1  -position in
 
-gui_view_scroll -id ${Wave.1} -vertical -set 427
+gui_view_scroll -id ${Wave.1} -vertical -set 552
 gui_show_grid -id ${Wave.1} -enable false
 # Restore toplevel window zorder
 # The toplevel window could be closed if it has no view/pane
